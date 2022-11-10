@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoITWebStudio</title>
+    <link rel="stylesheet" href="./css/normaliize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet">
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body class="page">
@@ -28,16 +30,21 @@
         <li><a href="tel:+380961111111" class="nav-cont link">+38 096 111 11 11</a></li>
       </ul>
     </header>
-    <!--Основний зміст сторінки-->
+
+    <div class="container"></div>
+
+    <!--Герой-->
     <main>
       <section class="hero">
         <h1 class="hero-tittle">Ефективні рішення для вашого бізнесу</h1>
         <button class="hero-button" type="button">Замовити послугу</button>
       </section>
+
       <!--Характеристики-->
       <section class="features">
-        <h2 class="hidden-tittle">Характеристики</h2>
-        <ul class="features list">
+        <div class="">
+          <h2 class="hidden-tittle">Характеристики</h2>
+          <ul class="features list"></ul>
           <li>
             <h3 class="features-tittle">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="features-text">
@@ -66,7 +73,10 @@
             </p>
           </li>
         </ul>
+      </div>
+        
       </section>
+
       <!--Чим ми займаємось-->
       <section class="service">
         <h2 class="service-tittle">Чим ми займаємося</h2>
@@ -76,6 +86,7 @@
           <li><img src="./photo/colour.jpg" alt="Людина підбирвє колір по кольоровій таблиці" width="370" height="294" /></li>
         </ul>
       </section>
+
       <!--Наша команда-->
       <section class="crew">
         <h2 class="crew-tittle">Наша команда</h2>
@@ -103,6 +114,7 @@
         </ul>
       </section>
     </main>
+
 <!--Підвал сайту-->
     <footer class="footer">
         <a class="logo link" href="">Web<span class="logo-footer">Studio</span></a>

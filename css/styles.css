@@ -22,6 +22,14 @@ body {
 .nav {
 
 }
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 1440px;
+    background-color: aqua;   
+}
+    
 .logo {
     font-family: Raleway;
     text-decoration: none;
@@ -42,6 +50,8 @@ body {
     color: var(--logo-text-color);
 }
 .list {
+    padding: 0px;
+    margin: 0px;
     list-style: none;
 }
 .nav-link {
@@ -69,43 +79,56 @@ body {
 }
 /* Герой */
 .hero {
-    background: var(--hero-bg-color);
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    color: var(--hero-footer-logo-color);
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--hero-footer-logo-color);
+    
+    background: var(--hero-bg-color);
 }
 .hero-button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+    border: 0 solid transparent;
+
+    color: var(--body-bg-color);
+    background: var(--accent-color);
+
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    background: var(--accent-color);
+    text-align: center;
+    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: 0;
-    cursor: pointer;
-    padding: 10px 32px;
-    color: var(--body-bg-color);
+    
+    cursor: pointer;    
 }
 /* .button {
     cursor: pointer;
 } */
 .hero-tittle {
-    color: var(--body-bg-color);
+    margin-top: 0;
+    margin-bottom: 40px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
- */
 
+    color: var(--body-bg-color);
 }
 /* Характеристики */
 .features {
@@ -228,4 +251,3 @@ body {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-}
