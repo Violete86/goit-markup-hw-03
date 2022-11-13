@@ -1,3 +1,12 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 :root {
     --logo-text-color: #000000;
     --primary-text-color: #757575;
@@ -11,6 +20,7 @@
     --footer-bg-color: #2F303A;
 }
 body {
+    margin: 0px;
     font-family: 'Roboto', sans-serif;
     font-style: normal; 
     font-size: 14px;
@@ -19,16 +29,27 @@ body {
     color: var(--primary-text-color);
 }
 /* Шапка */
-.nav {
+.page-header {
+    outline: 5px solid rgb(191, 255, 0);
+    background-color: darkgoldenrod;
+    
 
 }
-.container {
+/* .container {
     margin-left: auto;
     margin-right: auto;
     height: 100px;
     width: 1440px;
-    background-color: aqua;   
+    outline: 2px solid tomato;    */
+
+.container {
+    outline: 5px solid blue
+    width: 1200px;
+    margin: o auto;
+    padding: 0 15 px;
 }
+
+
     
 .logo {
     font-family: Raleway;
@@ -53,6 +74,10 @@ body {
     padding: 0px;
     margin: 0px;
     list-style: none;
+}
+.nav {
+    outline: 2px solid red;
+    display: block;
 }
 .nav-link {
     font-weight: 500;
@@ -93,7 +118,7 @@ body {
     
     background: var(--hero-bg-color);
 }
-.hero-button {
+.hero-btn {
     display: inline-block;
     border-radius: 4px;
     padding: 10px 32px;
@@ -119,12 +144,17 @@ body {
     cursor: pointer;
 } */
 .hero-tittle {
-    margin-top: 0;
+    outline: yellow;
+    display: block;
+    background-color: blue;
+    margin-top: 30px;
+    padding: 200px, 454px, 280px, 452px;
+    min-width: 696px;
+    height: 120px;
     margin-bottom: 40px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -140,11 +170,13 @@ body {
 .features-tittle {
     font-weight: 700;
     line-height: 1.14;
-    
+    margin left: 0;
     text-transform: uppercase;
     color: var(--h2-h3-link-color);
 }
 .features-text {
+    margin-top: 10px;
+    margin-left: 0;
     font-weight: 400;
     line-height: 1.71;
     
@@ -212,7 +244,19 @@ body {
 
 
 /* Стилі для Портфоліо */
-.portfolio-button {
+.porfolio-menu {
+    min-width: 575px;
+    padding: ;
+    margin-left: 512px;
+    margin-right: 513px;
+
+}
+
+.portfolio-btn {
+    padding: 6px, 22px;
+    border: 0;
+    margin: 0, 8px;
+    display: inline-block;
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
@@ -220,7 +264,7 @@ body {
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
-    border: 0;
+    
     cursor: pointer;
     color: var(--h2-h3-link-color);
     background: var(--crew-bg-color);
@@ -232,6 +276,46 @@ body {
     background: var(--accent-color);
     color: var(--body-bg-color);
 }
+.portfolio-btn-all {
+    min-width: 73px;
+    padding: 6px, 25px;
+
+    text-align: center;
+    border-radius: 4px;
+}
+.portfolio-bnt-sites {
+    min-width: 125px;
+    padding: 6px, 22px;
+
+    text-align: center;
+    border-radius: 4px;
+
+}
+.portfolio-btn-app {
+    min-width: 112px;
+    padding: 6px, 22px;
+
+    text-align: center;
+    border-radius: 4px;
+
+}
+.portfolio-btn-design {
+    min-width: 103px;
+    padding: 6px, 22px;
+
+    text-align: center;
+    border-radius: 4px;
+
+}
+.portfolio-btn-marketing {
+    min-width: 130px;
+    padding: 6px, 22px;
+
+    text-align: center;
+    border-radius: 4px;
+
+}
+
 /* .container {
     width: 1200px;
     padding: o, 15px;
